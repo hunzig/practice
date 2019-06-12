@@ -1,3 +1,6 @@
+# 该代码理论上可行，但是记录中途会出错，网易可能有校验机制，短时间快速翻页会诶终止
+
+
 import pyautogui
 import time
 
