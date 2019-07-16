@@ -17,7 +17,7 @@ def  submitJingying():
 		pyautogui.click()
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=i" + str(randomNumber))
+		pyautogui.typewrite("http://url/index.html?=i" + str(randomNumber))
 		#选择回帖
 		pyautogui.moveTo(535,522,duration=0.25)
 		pyautogui.click()
