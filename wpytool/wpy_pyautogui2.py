@@ -13,15 +13,14 @@ time.sleep(2)
 
 #定义一个经营类提交函数
 def  submitJingying():
-	i = 1
-	while i < 11:
+	for i in range(11):
 		#点击我要报送
 		pyautogui.click(116,358,duration=0.25)
 		#点击地址栏
 		pyautogui.click(465,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://url/index.html?=i" + str(randomNumber))
+		pyautogui.typewrite("http://url/index.html?=" + str(randomNumber))
 		#选择回帖
 		pyautogui.click(535,522,duration=0.25)
 		#选择经营
@@ -33,15 +32,14 @@ def  submitJingying():
 
 #定义一个宣传类提交函数
 def submitXuanchuan():	
-	i = 1
-	while i < 11 :
+	for i in range(11):
 		#点击我要报送
 		pyautogui.click(116,358,duration=0.25)
 		#点击地址栏
 		pyautogui.click(465,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=i" + str(randomNumber))
+		pyautogui.typewrite("http://url/index.html?=i" + str(randomNumber))
 		#选择主帖
 		pyautogui.click(467,522,duration=0.25)
 		#选择宣传
@@ -49,12 +47,11 @@ def submitXuanchuan():
 		#提交报送
 		pyautogui.click(937,666,duration=0.25)
 		time.sleep(1)
-		i += 1
+	
 
 
 
-i = 1
-while i < 6 :
+for i in range(5):
 
 	#以下这段代码为切换id
 	#选择身份栏
@@ -71,7 +68,7 @@ while i < 6 :
 	pyautogui.click(116,358,duration=0.25)
 	#提交后停顿片刻
 	time.sleep(1)
-	i += 1
+
 
 #最后提交十个宣传类url，id是哪个无所谓
 submitXuanchuan()
