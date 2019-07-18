@@ -72,3 +72,5 @@ for i in range(5):
 
 #最后提交十个宣传类url，id是哪个无所谓
 submitXuanchuan()
+
+pyautogui.alert('完成')
