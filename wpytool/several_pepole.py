@@ -13,13 +13,9 @@ pyautogui.FAILSAFE =True
 time.sleep(2)
 
 
-
-
-
-
 #定义一个经营类提交函数
 def  submitJingying():
-	for i in range(11):
+	for i in range(12):
 		#点击我要报送
 		pyautogui.click(53,354,duration=0.25)
 		#点击地址栏
@@ -38,7 +34,7 @@ def  submitJingying():
 
 #定义一个宣传类提交函数
 def submitXuanchuan():	
-	for i in range(11):
+	for i in range(12):
 		#点击我要报送
 		pyautogui.click(53,354,duration=0.25)
 		#点击地址栏
@@ -76,6 +72,8 @@ for i in user:
 		#点击我要报送
 		pyautogui.click(53,354,duration=0.25)
 		time.sleep(1)
+
+
 		for i in range(5):
 
 			#以下这段代码为切换id
@@ -96,8 +94,8 @@ for i in user:
 		#最后提交十个宣传类url，id是哪个无所谓
 		submitXuanchuan()
 
+		#退出
 		pyautogui.click(1885,146,duration=0.25)
-
 
 
 pyautogui.alert('完成')
