@@ -2,7 +2,7 @@
 #因为url校验机制很弱，所以可以实现全自动完成。
 #校验机制为，页面上有id名称即视为发帖有效，故自己制作一个包含五个id的页面即可。
 #校验机制二，每个页面url不能重复，所以在每个url后面随机加上一个9位的随机数
-#分辨率设置成1920×1080（不然像素点需要重新设置）.
+#分辨率设置成1920×1080（不然像素点需要重新设置）
 
 
 import pyautogui
@@ -56,7 +56,7 @@ for i in user:
 		#输入用户名
 		pyautogui.click(874,374,duration=0.25)
 		pyautogui.typewrite(i)
-		#收入密码
+		#输入密码
 		pyautogui.click(871,404,duration=0.25)
 		pyautogui.typewrite(i)
 		#输入验证码
