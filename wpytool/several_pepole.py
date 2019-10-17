@@ -22,7 +22,7 @@ def  submitJingying():
 		pyautogui.click(413,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index2.html?=" + str(randomNumber))
+		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=" + str(randomNumber))
 		#选择回帖
 		pyautogui.click(476,522,duration=0.25)
 		#选择经营
@@ -41,7 +41,7 @@ def submitXuanchuan():
 		pyautogui.click(413,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index2.html?=" + str(randomNumber))
+		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=" + str(randomNumber))
 		#选择主帖
 		pyautogui.click(409,522,duration=0.25)
 		#选择宣传
