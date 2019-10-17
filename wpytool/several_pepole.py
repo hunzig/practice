@@ -17,12 +17,12 @@ time.sleep(2)
 def  submitJingying():
 	for i in range(12):
 		#点击我要报送
-		pyautogui.click(53,354,duration=0.25)
+		pyautogui.click(36,356,duration=0.25)
 		#点击地址栏
 		pyautogui.click(413,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=" + str(randomNumber))
+		pyautogui.typewrite("http://dongyang.ga:7373/index2.html?=" + str(randomNumber))
 		#选择回帖
 		pyautogui.click(476,522,duration=0.25)
 		#选择经营
@@ -36,12 +36,12 @@ def  submitJingying():
 def submitXuanchuan():	
 	for i in range(12):
 		#点击我要报送
-		pyautogui.click(53,354,duration=0.25)
+		pyautogui.click(36,356,duration=0.25)
 		#点击地址栏
 		pyautogui.click(413,345,duration=0.25)
 		#输入网址加随机值
 		randomNumber = random.randint(100000000,999999999)
-		pyautogui.typewrite("http://dongyang.ga:7373/index.html?=" + str(randomNumber))
+		pyautogui.typewrite("http://dongyang.ga:7373/index2.html?=" + str(randomNumber))
 		#选择主帖
 		pyautogui.click(409,522,duration=0.25)
 		#选择宣传
@@ -50,27 +50,28 @@ def submitXuanchuan():
 		pyautogui.click(900,666,duration=0.25)
 		time.sleep(1)
 
-user = ["dyjl","dywgc","dyzqp","dywqq","dyhzh","dyxjy"]
+user = ["dyxl","dywd","dyxyh","dy01","dylhf","dyzlj","dyjl","dywgc","dyzqp","dywqq","dyhzh","dyxjy"]
 
 for i in user:
 		#输入用户名
-		pyautogui.click(874,374,duration=0.25)
+		pyautogui.click(880,375,duration=0.25)
+		pyautogui.click(880,375,duration=0.25)
 		pyautogui.typewrite(i)
 		#输入密码
-		pyautogui.click(871,404,duration=0.25)
+		pyautogui.click(880,406,duration=0.25)
 		pyautogui.typewrite(i)
 		#输入验证码
-		pyautogui.click(870,435,duration=0.25)
+		pyautogui.click(880,435,duration=0.25)
 		pyautogui.typewrite("123")
 		#输入短信验证码
-		pyautogui.click(872,467,duration=0.25)
+		pyautogui.click(880,467,duration=0.25)
 		pyautogui.typewrite("123")
 		#点击登录
 		pyautogui.click(907,539,duration=0.25)
 
 		time.sleep(1)
 		#点击我要报送
-		pyautogui.click(53,354,duration=0.25)
+		pyautogui.click(36,356,duration=0.25)
 		time.sleep(1)
 
 
@@ -78,7 +79,7 @@ for i in user:
 
 			#以下这段代码为切换id
 			#选择身份栏
-			pyautogui.click(726,458,duration=0.25)
+			pyautogui.click(620,460,duration=0.25)
 			#选择身份
 			pyautogui.press(['down'])
 			pyautogui.press('enter')
@@ -88,7 +89,7 @@ for i in user:
 			#开始填写经营类表单并提交
 			submitJingying()
 			#重新回到首页，准备选择的下个id
-			pyautogui.click(53,354,duration=0.25)
+			pyautogui.click(36,356,duration=0.25)
 			#提交后停顿片刻
 			time.sleep(1)
 		#最后提交十个宣传类url，id是哪个无所谓
