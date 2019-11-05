@@ -50,7 +50,7 @@ def submitXuanchuan():
 		pyautogui.click(900,666,duration=0.25)
 		time.sleep(1)
 
-user = ["dyxl","dywd","dyxyh","dy01","dylhf","dyzlj","dyjl","dywgc","dyzqp","dywqq","dyhzh","dyxjy"]
+user = ["dyxyh","dy01","dylhf","dyzlj","dyjl","dywgc","dyzqp","dywqq","dyhzh","dyxjy"]
 
 for i in user:
 		#输入用户名
@@ -69,7 +69,7 @@ for i in user:
 		#点击登录
 		pyautogui.click(907,539,duration=0.25)
 
-		time.sleep(1)
+		time.sleep(3)
 		#点击我要报送
 		pyautogui.click(36,356,duration=0.25)
 		time.sleep(1)
