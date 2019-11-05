@@ -58,10 +58,12 @@ for i in range(5):
 
 	#以下这段代码为切换id
 	#选择身份栏
-	pyautogui.click(726,458,duration=0.25)
+	pyautogui.click(620,458,duration=0.25)
+	time.sleep(1)
 	#选择身份
 	pyautogui.press(['down'])
 	pyautogui.press('enter')
+	time.sleep(1)
 	#点击确定
 	pyautogui.click()
 	time.sleep(1)
