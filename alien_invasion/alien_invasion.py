@@ -5,6 +5,7 @@ from game_stats import GameStats
 from ship import Ship
 import game_functions as gf
 from pygame.sprite import Group
+from button import Button
 
 
 def run_game():
@@ -25,6 +26,9 @@ def run_game():
 	#创建外星人群
 	gf.create_fleet(ai_settings, screen, ship, aliens)
 	
+	# 创建Play按钮
+	play_button = Button(ai_settings, screen, "Play")
+	
 	#开始游戏主循环
 	while True:
 		#监视键盘和鼠标事件
@@ -38,6 +42,6 @@ def run_game():
 		
 		
 		#每次循环时都重绘屏幕 让最近绘制的屏幕可见
-		gf.update_screen(ai_settings, screen, ship, bullets, aliens)
+		gf.update_screen(ai_settings, screen, stats, ship, bullets, aliens, play_button)
 		
 run_game()
